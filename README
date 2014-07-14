@@ -1,0 +1,6 @@
+Make a web page that lets the user input the lengths of the sides of a triangle, and tells them whether they form an equilateral, isosceles, or scalene triangle. 
+	Equilateral: All sides are equal;
+	Isosceles: Exactly two sides are equal;
+	Scalene: No Sides are equal
+
+Not all combinations of three numbers make valid triangles. The general rule is that if one side is at least as long as the other two combined, the lengths do not form a triangle. 
