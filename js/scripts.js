@@ -7,7 +7,7 @@ var checkTriangle = function (side1, side2, side3){
     return 'is a isosceles triangle';
   }
   else{
-    return 'is a isosceles triangle';
+    return 'is a scalene triangle';
   }
 }
 
