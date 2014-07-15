@@ -39,3 +39,18 @@ var isoscelesTriangle = function(side1, side2, side3){
   }
 }
 
+$(document).ready(function(){
+  $("form#checkTriangle").submit(function(event){
+    var triangleSides = $("input#triangle-sides").val().split(',');
+    var side1 = parseInt(triangleSides[0]);
+    var side2 = parseInt(triangleSides[1]);
+    var side3 = parseInt(triangleSides[2]);
+    var result = checkTriangle(side1, side2, side3);
+
+    $(".valid-triangle").text(triangleSides[0] + ',' + triangleSides[1] + ',' + triangleSides[2]);
+    $('.is-triangle').text(result);
+
+    $('#result').show();
+    event.preventDefault();
+  });
+});
