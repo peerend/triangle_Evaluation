@@ -1,12 +1,11 @@
 var checkTriangle = function (side1, side2, side3){
   if (notTriangle(side1, side2, side3)){
   return 'is not a triangle';
-  } else if(equilateralTriangle(side1, side2, side3)){
+  }else if(equilateralTriangle(side1, side2, side3)){
     return 'is a equilateral triangle';
-  } else if(isoscelesTriangle(side1, side2, side3)){
+  }else if(isoscelesTriangle(side1, side2, side3)){
     return 'is a isosceles triangle';
-  }
-  else{
+  }else{
     return 'is a scalene triangle';
   }
 }
@@ -47,28 +46,10 @@ $(document).ready(function() {
     var sideThree = parseInt(triangleSides[2]);
     var result = checkTriangle(sideOne, sideTwo, sideThree);
 
-    $(".valid-triangle").text(triangleSides[0] + "," + triangleSides[1] + "," + triangleSides[2]);
+    $(".valid-triangle").text(triangleSides[0] + "," + triangleSides[1] + "," + triangleSides[2]+ ' ');
     $(".is-triangle").text(result);
-
 
     $("#result").show();
     event.preventDefault();
   });
 });
-
-
-// $(document).ready(function(){
-//   $("form#checkTriangle").submit(function(event){
-//     var triangleSides = $("input#triangle-sides").val().split(',');
-//     var side1 = parseInt(triangleSides[0]);
-//     var side2 = parseInt(triangleSides[1]);
-//     var side3 = parseInt(triangleSides[2]);
-//     var result = checkTriangle(side1, side2, side3);
-
-//     $(".valid-triangle").text(triangleSides[0] + ',' + triangleSides[1] + ',' + triangleSides[2]);
-//     $('.is-triangle').text(result);
-
-//     $('#result').show();
-//     event.preventDefault();
-//   });
-// });

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Triangle Checker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Check three sides for triangularity!</h1>
+
+      <form id="checkTriangle">
+        <div class="form-group">
+          <label for="triangle-sides">Enter three side lengths seperated by commas:</label>
+          <input id="triangle-sides" type="text">
+        </div>
+
+        <button type="submit" class="btn">Check</button>
+      </form>
+
+      <div id="result">
+        <p><span class="valid-triangle"></span><span class="is-triangle"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
